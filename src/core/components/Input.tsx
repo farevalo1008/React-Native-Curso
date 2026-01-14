@@ -22,7 +22,7 @@ export default Input
 const styles = StyleSheet.create({
     input:{
         backgroundColor:'#fff',
-        width:300,
+        width:'100%',
         padding:16,
         borderRadius: 8,
         borderWidth: 1,
