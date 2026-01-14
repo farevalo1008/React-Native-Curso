@@ -2,9 +2,9 @@
 
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { Button, Input } from '@core';
+import { NavigationApp } from '@core';
 
 export default function App() {
     // Use `useFonts` only if you can't use the config plugin.
@@ -25,10 +25,7 @@ export default function App() {
     }
 
   return (
-    <View style={styles.container}>
-      <Input value='' onChange={console.log}/>
-      <Button title='Hello' onPress={() => console.log('Hello')}/>
-    </View>
+    <NavigationApp/>
   );
 }
 
